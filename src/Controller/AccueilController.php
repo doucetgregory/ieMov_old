@@ -18,4 +18,8 @@ class AccueilController extends AbstractController
         return $this->render('accueil/helloWorld.html.twig');
     }
 
+    public function index() {
+        return $this->render('accueil/index.html.twig');
+    }
+
 }

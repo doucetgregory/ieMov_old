@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IeMov</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../font/css/style.css" />
+    <script src="../font/js/carousel.js" async></script>
+</head>
+<body>
+
+<!-- ====== BARRE NAVIGATION ====== -->
+<div class="navbar navbar-custom navbar-fixed-top">
+    <div class="container"> <!-- Adapte le contenu selon la grille -->
+        <div class="navbar-header"> <!-- En-tete du menu "titre" -->
+            <a class="navbar-brand" href="#">ie<span>Mov</span></a>
+        </div>
+        <ul class="nav navbar-nav"><!-- Onglets du menu -->
+            <li><a href="#">Films</a></li>
+            <li><a href="#">Séries</a></li>
+            <li><a href="#">Faire une demande</a></li>
+        </ul>
+        <div class="navbar-button pull-right"><!--- Boutons de rcherche, identification, connexion -->
+            <!--input type="search" class="input-search" /-->
+            <button type="" class="btn-search"><span class="glyphicon glyphicon-search"></span></button>
+            <button type="" class="btn-identification">S'identifier</button>
+            <button type="" class="btn-connexion">Se connecter</button>
+        </div>
+    </div>
+</div>
+<!-- ============ -->
+
+<!-- ===== AFFICHE FILM ARRIERE PLAN ===== -->
+<div class="container-fluid slideshow-fond fond-1" active="yes"><!-- positionne et choisis l'image -->
+    <div class="flou"></div><!-- Ajoute un flou pour améliorer la lisibilité -->
+</div>
+<div class="container-fluid slideshow-fond fond-2" active="no"><!-- positionne et choisis l'image -->
+    <div class="flou"></div><!-- Ajoute un flou pour améliorer la lisibilité -->
+</div>
+<div class="container-fluid slideshow-fond fond-3" active="no"><!-- positionne et choisis l'image -->
+    <div class="flou"></div><!-- Ajoute un flou pour améliorer la lisibilité -->
+</div>
+<div class="container-fluid slideshow-fond fond-4" active="no"><!-- positionne et choisis l'image -->
+    <div class="flou"></div><!-- Ajoute un flou pour améliorer la lisibilité -->
+</div>
+<div class="container-fluid slideshow-fond fond-5" active="no"><!-- positionne et choisis l'image -->
+    <div class="flou"></div><!-- Ajoute un flou pour améliorer la lisibilité -->
+</div>
+
+<!-- ===== NOUVEAUTES ===== -->
+<div class="container slideshow"> <!-- Adapte le contenu selon la grille -->
+    <div class="row">
+
+        <div id="slideshow-fleche-gauche" class="col-lg-1 slideshow-page"><!-- Fleche gauche pour passer l'article -->
+            <button type="button"><span class="glyphicon glyphicon-chevron-left"></span></button>
+        </div>
+
+        <div id="slideshow-container" class="col-lg-10">
+            <div class="article article-1 active" position="1">
+                <div class="col-lg-4 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/thor_3_ragnarok.jpg" />
+                </div>
+                <div class="col-lg-8 description-film">
+                    <h1><a href="#" class="titre">Thor | Ragnarok</a></h1><!-- Titre -->
+                    <!-- !!!!!ajouté note du film!!!!! -->
+                    <p class="synopsis"><!-- Description du film/serie -->
+                        Privé de son puissant marteau, Thor est retenu prisonnier sur une lointaine planète aux confins de l'univers. Pour sauver Asgard, il va devoir lutter contre le temps afin d'empècher l'impitoyable Hela d'accomplir le Ragnarok : la destruction de son monde et la fin de la civilisation asgardienne. Mais pour y parvenir, il va d'abord devoir mener un combat titanesque de gladiateurs contre celui qui était autrefois son allié au sein des Avengers : l'incroyable Hulk!
+                    </p>
+                    <div class="personnes"><!-- Acteurs et Réalisateurs -->
+                        <h3>Réalisateurs &amp; Acteurs</h3><!-- titre section -->
+                        <ul><!-- photo des acteurs -->
+                            <li class="realisateur"><a href="#" style="background-image: url(../font/img/acteurs/taika_waititi.jpg)" title="Taika Waititi"></a></li>
+                            <li class="separateur"></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/chris_hemsworth.jpg)" title="Chris Hemsworth"></a></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/tom_hiddleston.jpg)" title="Tom Hiddleston"></a></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/cate_blanchett.jpg)" title="Cate Blachett"></a></li>
+                        </ul>
+                    </div>
+                    <div class="time-kind"><!-- Durée et genre du film -->
+                        <h3 class="time"><span class="glyphicon glyphicon-time"></span>2h 11min</h3><h3 class="kind">Science Fiction</h3><h3 class="kind">Action</h3>
+                    </div>
+                    <div class="buttons"><!-- Ajouter Ã  une collection, aux favoris, accéder au film -->
+                        <button type="button" class="btn-add"><span class="glyphicon glyphicon-plus"></span></button>
+                        <button type="button" class="btn-favorite"><span class="glyphicon glyphicon-heart"></span></button>
+                        <button type="button" class="btn-acces">Accéder au film</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article article-2" position="2">
+                <div class="col-lg-4 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/avengers_age_of_ultron.jpg" />
+                </div>
+                <div class="col-lg-8 description-film">
+                    <h1><a href="#" class="titre">Avengers 2 | Age of Ultron</a></h1><!-- Titre -->
+                    <!-- !!!!!ajouté note du film!!!!! -->
+                    <p class="synopsis"><!-- Description du film/serie -->
+                        Privé de son puissant marteau, Thor est retenu prisonnier sur une lointaine planète aux confins de l'univers. Pour sauver Asgard, il va devoir lutter contre le temps afin d'empècher l'impitoyable Hela d'accomplir le Ragnarok : la destruction de son monde et la fin de la civilisation asgardienne. Mais pour y parvenir, il va d'abord devoir mener un combat titanesque de gladiateurs contre celui qui était autrefois son allié au sein des Avengers : l'incroyable Hulk!
+                    </p>
+                    <div class="personnes"><!-- Acteurs et Réalisateurs -->
+                        <h3>Réalisateurs &amp; Acteurs</h3><!-- titre section -->
+                        <ul><!-- photo des acteurs -->
+                            <li class="realisateur"><a href="#" style="background-image: url(../font/img/acteurs/taika_waititi.jpg)" title="Taika Waititi"></a></li>
+                            <li class="separateur"></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/chris_hemsworth.jpg)" title="Chris Hemsworth"></a></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/tom_hiddleston.jpg)" title="Tom Hiddleston"></a></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/cate_blanchett.jpg)" title="Cate Blachett"></a></li>
+                        </ul>
+                    </div>
+                    <div class="time-kind"><!-- Durée et genre du film -->
+                        <h3 class="time"><span class="glyphicon glyphicon-time"></span>2h 11min</h3><h3 class="kind">Science Fiction</h3><h3 class="kind">Action</h3>
+                    </div>
+                    <div class="buttons"><!-- Ajouter Ã  une collection, aux favoris, accéder au film -->
+                        <button type="button" class="btn-add"><span class="glyphicon glyphicon-plus"></span></button>
+                        <button type="button" class="btn-favorite"><span class="glyphicon glyphicon-heart"></span></button>
+                        <button type="button" class="btn-acces">Accéder au film</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article article-3" position="3">
+                <div class="col-lg-4 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/batman_v_superman.jpg" />
+                </div>
+                <div class="col-lg-8 description-film">
+                    <h1><a href="#" class="titre">Batman V Superman | Dawn of Justice</a></h1><!-- Titre -->
+                    <!-- !!!!!ajouté note du film!!!!! -->
+                    <p class="synopsis"><!-- Description du film/serie -->
+                        Privé de son puissant marteau, Thor est retenu prisonnier sur une lointaine planète aux confins de l'univers. Pour sauver Asgard, il va devoir lutter contre le temps afin d'empècher l'impitoyable Hela d'accomplir le Ragnarok : la destruction de son monde et la fin de la civilisation asgardienne. Mais pour y parvenir, il va d'abord devoir mener un combat titanesque de gladiateurs contre celui qui était autrefois son allié au sein des Avengers : l'incroyable Hulk!
+                    </p>
+                    <div class="personnes"><!-- Acteurs et Réalisateurs -->
+                        <h3>Réalisateurs &amp; Acteurs</h3><!-- titre section -->
+                        <ul><!-- photo des acteurs -->
+                            <li class="realisateur"><a href="#" style="background-image: url(../font/img/acteurs/taika_waititi.jpg)" title="Taika Waititi"></a></li>
+                            <li class="separateur"></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/chris_hemsworth.jpg)" title="Chris Hemsworth"></a></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/tom_hiddleston.jpg)" title="Tom Hiddleston"></a></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/cate_blanchett.jpg)" title="Cate Blachett"></a></li>
+                        </ul>
+                    </div>
+                    <div class="time-kind"><!-- Durée et genre du film -->
+                        <h3 class="time"><span class="glyphicon glyphicon-time"></span>2h 11min</h3><h3 class="kind">Science Fiction</h3><h3 class="kind">Action</h3>
+                    </div>
+                    <div class="buttons"><!-- Ajouter Ã  une collection, aux favoris, accéder au film -->
+                        <button type="button" class="btn-add"><span class="glyphicon glyphicon-plus"></span></button>
+                        <button type="button" class="btn-favorite"><span class="glyphicon glyphicon-heart"></span></button>
+                        <button type="button" class="btn-acces">Accéder au film</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article article-4" position="4">
+                <div class="col-lg-4 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/captain_america_civil_war.jpg" />
+                </div>
+                <div class="col-lg-8 description-film">
+                    <h1><a href="#" class="titre">Captain America 3 | Civil War</a></h1><!-- Titre -->
+                    <!-- !!!!!ajouté note du film!!!!! -->
+                    <p class="synopsis"><!-- Description du film/serie -->
+                        Privé de son puissant marteau, Thor est retenu prisonnier sur une lointaine planète aux confins de l'univers. Pour sauver Asgard, il va devoir lutter contre le temps afin d'empècher l'impitoyable Hela d'accomplir le Ragnarok : la destruction de son monde et la fin de la civilisation asgardienne. Mais pour y parvenir, il va d'abord devoir mener un combat titanesque de gladiateurs contre celui qui était autrefois son allié au sein des Avengers : l'incroyable Hulk!
+                    </p>
+                    <div class="personnes"><!-- Acteurs et Réalisateurs -->
+                        <h3>Réalisateurs &amp; Acteurs</h3><!-- titre section -->
+                        <ul><!-- photo des acteurs -->
+                            <li class="realisateur"><a href="#" style="background-image: url(../font/img/acteurs/taika_waititi.jpg)" title="Taika Waititi"></a></li>
+                            <li class="separateur"></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/chris_hemsworth.jpg)" title="Chris Hemsworth"></a></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/tom_hiddleston.jpg)" title="Tom Hiddleston"></a></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/cate_blanchett.jpg)" title="Cate Blachett"></a></li>
+                        </ul>
+                    </div>
+                    <div class="time-kind"><!-- Durée et genre du film -->
+                        <h3 class="time"><span class="glyphicon glyphicon-time"></span>2h 11min</h3><h3 class="kind">Science Fiction</h3><h3 class="kind">Action</h3>
+                    </div>
+                    <div class="buttons"><!-- Ajouter Ã  une collection, aux favoris, accéder au film -->
+                        <button type="button" class="btn-add"><span class="glyphicon glyphicon-plus"></span></button>
+                        <button type="button" class="btn-favorite"><span class="glyphicon glyphicon-heart"></span></button>
+                        <button type="button" class="btn-acces">Accéder au film</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article article-5" position="5">
+                <div class="col-lg-4 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/john_wick.jpg" />
+                </div>
+                <div class="col-lg-8 description-film">
+                    <h1><a href="#" class="titre">John Wick</a></h1><!-- Titre -->
+                    <!-- !!!!!ajouté note du film!!!!! -->
+                    <p class="synopsis"><!-- Description du film/serie -->
+                        Privé de son puissant marteau, Thor est retenu prisonnier sur une lointaine planète aux confins de l'univers. Pour sauver Asgard, il va devoir lutter contre le temps afin d'empècher l'impitoyable Hela d'accomplir le Ragnarok : la destruction de son monde et la fin de la civilisation asgardienne. Mais pour y parvenir, il va d'abord devoir mener un combat titanesque de gladiateurs contre celui qui était autrefois son allié au sein des Avengers : l'incroyable Hulk!
+                    </p>
+                    <div class="personnes"><!-- Acteurs et Réalisateurs -->
+                        <h3>Réalisateurs &amp; Acteurs</h3><!-- titre section -->
+                        <ul><!-- photo des acteurs -->
+                            <li class="realisateur"><a href="#" style="background-image: url(../font/img/acteurs/taika_waititi.jpg)" title="Taika Waititi"></a></li>
+                            <li class="separateur"></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/chris_hemsworth.jpg)" title="Chris Hemsworth"></a></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/tom_hiddleston.jpg)" title="Tom Hiddleston"></a></li>
+                            <li class="acteur"><a href="#" style="background-image: url(../font/img/acteurs/cate_blanchett.jpg)" title="Cate Blachett"></a></li>
+                        </ul>
+                    </div>
+                    <div class="time-kind"><!-- Durée et genre du film -->
+                        <h3 class="time"><span class="glyphicon glyphicon-time"></span>2h 11min</h3><h3 class="kind">Science Fiction</h3><h3 class="kind">Action</h3>
+                    </div>
+                    <div class="buttons"><!-- Ajouter Ã  une collection, aux favoris, accéder au film -->
+                        <button type="button" class="btn-add"><span class="glyphicon glyphicon-plus"></span></button>
+                        <button type="button" class="btn-favorite"><span class="glyphicon glyphicon-heart"></span></button>
+                        <button type="button" class="btn-acces">Accéder au film</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="slideshow-fleche-droite" class="col-lg-1 slideshow-page"><!-- Fleche droite pour passer l'article -->
+            <button type="button"><span class="glyphicon glyphicon-chevron-right"></span></button>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-" id="slideshow-pagination">
+            <a href="#" class="barre-1 active" position="1"></a>
+            <a href="#" class="barre-2" position="2"></a>
+            <a href="#" class="barre-3" position="3"></a>
+            <a href="#" class="barre-4" position="4"></a>
+            <a href="#" class="barre-5" position="5"></a>
+        </div>
+    </div>
+</div>
+<!-- ============ -->
+
+<!-- ====== CONTENU ACCUEIL FILM ====== -->
+<div class="container contenu-accueil-film">
+    <div class="col-lg-8 liste-film">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navigation">
+                    <h1 class="active"><a href="#" id="selection_film">Films</a></h1>
+                    <h1><a href="#" id="selection_serie">Séries</a></h1>
+                </div>
+            </div>
+            <div class="row">
+                <a href="#" class="col-lg-3 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/avengers_infinty_war.jpg" />
+                    <p>Avengers 3 | Infinty War</p>
+                </a>
+                <a href="#" class="col-lg-3 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/ready_player_one.jpg" />
+                    <p>Ready Player One</p>
+                </a>
+                <a href="#" class="col-lg-3 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/black_panther.jpg" />
+                    <p>Black Panther</p>
+                </a>
+                <a href="#" class="col-lg-3 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/justice_league.jpg" />
+                    <p>Justice League</p>
+                </a>
+                <a href="#" class="col-lg-3 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/thor_3_ragnarok.jpg" />
+                    <p>Thor 3 | Ragnarok</p>
+                </a>
+                <a href="#" class="col-lg-3 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/valerian.jpg" />
+                    <p>Valerian</p>
+                </a>
+                <a href="#" class="col-lg-3 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/la_momie.jpg" />
+                    <p>La Momie</p>
+                </a>
+                <a href="#" class="col-lg-3 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/mr_wolf.jpg" /><p>Mr. Wolf</p>
+                </a>
+                <a href="#" class="col-lg-3 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/batman_v_superman.jpg" />
+                    <p>Batman V Superman</p>
+                </a>
+                <a href="#" class="col-lg-3 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/john_wick_2.jpg" />
+                    <p>John Wick 2</p>
+                </a>
+                <a href="#" class="col-lg-3 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/avengers_age_of_ultron.jpg" />
+                    <p>Avengers | Age of Ultron</p>
+                </a>
+                <a href="#" class="col-lg-3 affiche-film">
+                    <img src="../font/img/affiche_film_verticale/john_wick.jpg" />
+                    <p>John Wick</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-offset-1 col-lg-3 options">
+        <div class="option">
+            <h1>Film par genre</h1>
+            <ul>
+                <a href="#"><li>Science-Fiction</li></a>
+                <a href="#"><li>Action</li></a>
+                <a href="#"><li>Espionnage</li></a>
+                <a href="#"><li>Aventure</li></a>
+                <a href="#"><li>Thriller</li></a>
+            </ul>
+        </div>
+        <div class="option">
+            <h1>Film par qualité</h1>
+            <ul>
+                <a href="#"><li>720p</li></a>
+                <a href="#"><li>1080p</li></a>
+                <a href="#"><li>DVD</li></a>
+            </ul>
+        </div>
+        <div class="option">
+            <h1>Film par année</h1>
+            <ul>
+                <a href="#"><li>2018</li></a>
+                <a href="#"><li>2017</li></a>
+                <a href="#"><li>2016</li></a>
+                <a href="#"><li>2015</li></a>
+                <a href="#"><li>2014</li></a>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="../bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+</html>
