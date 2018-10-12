@@ -15,9 +15,7 @@ class AccueilController extends AbstractController
 {
 
     public function helloWorld() {
-        return new Response(
-            '<html><body>Hello World !</body></html>'
-        );
+        return $this->render('accueil/helloWorld.html.twig');
     }
 
 }
